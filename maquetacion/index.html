@@ -5,10 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xacademy Clase 1 maquetacion</title>
+    <link rel="icon" type="image/x-icon" href="logo.svg">
     <link rel="stylesheet" href="style.css">
    </head>
 <body>
-    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 10px 100px; justify-content: space-between">
+   
+    <nav>
+        <div class="logo">
+            <img src="logo.svg">
+        </div>
+        <div class="menu">
+            <div class="search">
+                <svg width="34" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z" fill="currentColor" /></svg>
+            </div>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <svg class="hamburguesa" width="30" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z" fill="currentColor" /><path d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z" fill="currentColor" /><path d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z" fill="currentColor" /></svg></label>
+                <ul class="enlacesMenu">
+                <li>Nosotros</li>
+                <li>Programas</li>
+                <li>Capacitaciones</li>
+                <li>Alianzas</li>
+                <li>Contacto</li>
+                <li>Sumate +</li>
+                <li id="icono">Instagram</li>
+                <li>Instagram</li>
+                <li>Linkedin</li>
+                <li id="icono">Linkedin</li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="texto-introduccion">
+        <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1> 
+        <div class="botones">
+            <button class="btn">Contactanos 
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.0378 6.34317L13.6269 7.76069L16.8972 11.0157L3.29211 11.0293L3.29413 13.0293L16.8619 13.0157L13.6467 16.2459L15.0643 17.6568L20.7079 11.9868L15.0378 6.34317Z" fill="currentColor" /></svg></button>
+            <button class="btn">Sumate 
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4C11.4477 4 11 4.44772 11 5V11H5C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H11V19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19V13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H13V5C13 4.44772 12.5523 4 12 4Z" fill="currentColor" /></svg></button>
+        </div>    
+    </section>
+
+   <section>
+    <div class="impacto">
+    <div class="definicionImpacto">
+        <h2 class="impacto-titulo">.Impacto</h2>
+        <p>Buscamos construir alianzas y fortalecer vínculos para generar una transformación real en la comunidad. Trabajamos para acercar la tecnología innovadora y disruptiva del sector privado hacia el sector social.</p>
+    </div>
+
+    <div class="contadores">
+
+        <div class="contador-localidades cont">
+            <div class="valor-contador"> <p>58</p> </div>
+            <div class="localidad"><h3>Localidad</h3></div>
+        </div>
+
+        <div class="contador-Mentores cont">
+             <div class="signo-Mentores">+</div>
+             <div class="valor-Mentores"><p>50</p> </div>
+             <div class="Mentores"><h3>Mentores</h3></div>
+     </div>
+
+      <div class="contador-participantes cont">
+        <div class="valor-participantes"> <p>300</p> </div>
+        <div class="participantes"><h3>Participantes</h3></div>
+      </div>
+      
+    </div>
+    
+</div>
+   </section>
+
+   <section class="secciones-marg programas"><h2>.Programas</h2>
+<div class="imagen imagen-size image-border-rigth">
+</div>
+<div class="contenido">
+    <div class="imag-titulo"></div>
+    <p>xAcademy es un programa de formación en tecnología llevado adelante por la Fundación Tecnología con Propósito junto a Santex que busca promover un cambio positivo en la comunidad a través de la educación en IT, apuntando a lograr la inserción laboral de personas en el mundo tecnológico.</p>
+    <button class="btn">´Más Info  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.0378 6.34317L13.6269 7.76069L16.8972 11.0157L3.29211 11.0293L3.29413 13.0293L16.8619 13.0157L13.6467 16.2459L15.0643 17.6568L20.7079 11.9868L15.0378 6.34317Z" fill="currentColor" /></svg> </button>
+    <h4>Robótica educativa: la tecnología del futuro</h4>
+    <p>Durante el curso, los alumnos y alumnas a través de la robótica desarrollan la curiosidad, el autodidactismo y las habilidades blandas necesarias para afrontar la revolución tecnológica del siglo XXI..</p>
+    <button class="btn">´Más Info  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.0378 6.34317L13.6269 7.76069L16.8972 11.0157L3.29211 11.0293L3.29413 13.0293L16.8619 13.0157L13.6467 16.2459L15.0643 17.6568L20.7079 11.9868L15.0378 6.34317Z" fill="currentColor" /></svg> </button>
+    <div class="imagen-2 imagen-size image-border-left">
+    </div>
+</div>
+</section>
+   <section class="secciones-marg capacitacion"><h2>.Capacitaciones</h2></section>
+   <section class="secciones-marg equipo"><h2>.Equipo</h2></section>
+   <section class="secciones-marg alianza"><h2>.Alianza</h2></section>
+
+    </main>
+ <footer>
+
+ </footer>
+   <!--  <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 10px 100px; justify-content: space-between">
         <div id="header-left">
             <img src="logo.svg">
         </div>
@@ -29,6 +119,6 @@
             <button class="redondo">Contactanos -></button>
             <button class="redondo" style="margin-left: 14px;">Sumate +</button>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>

@@ -1,13 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@00&display=swap');
+
+:root {
+    --fontSize: 28px;
+}
+
+*{ font-family:'Inter' ;
+
+}
+
 body {
     margin: 0;
 }
 p {
     margin-right: 40px;
 }
-h1 {
+/* h1 {
     margin: 0px 400px;
     text-align: center;
-}
+} */
 button.redondo {
     background-color: white;
     border: 1px solid black;
@@ -19,3 +29,212 @@ div#introduction-actions {
     display: flex;
     justify-content: center;
 }
+
+/* MENU */
+nav {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 80px;
+  width: 557px;
+  border-bottom: 2px solid gray;
+  align-items: center;
+  justify-content: space-between;
+}
+#icono{
+    display:none;
+    
+}
+.enlacesMenu{
+    display: none;
+ 
+}
+
+.enlacesMenu{
+   
+    background-color: white;
+    height:100%;
+    width:91%;
+    opacity: 0.9;
+    
+ 
+ }
+.enlacesMenu li{
+   list-style:none;
+   text-align: center;
+   font-size: 1.5em;
+   font-weight: bold;
+ 
+
+}
+.enlacesMenu li:first-child{
+    margin-top: 100px; 
+ }
+
+
+input:checked ~ ul{
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 70px;
+  
+
+}
+
+input {
+    display: none;
+}
+
+.menu {
+    display: flex;
+   justify-content: end;
+}
+.search {
+    padding: 0px 16px;
+}
+.hamburguesa {
+    padding: 0px 16px;
+}
+
+
+/* MAIN */
+.texto-introduccion{
+
+    padding: 70px 30px;
+    height: 241px;
+    width: 562px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+   
+}
+h1 {
+   
+    font-size: 1.9em;
+     text-align: center;
+}
+.botones{
+ margin-top: 40px;
+ display: flex;
+ justify-content: center;
+}
+
+.btn{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  border:2px solid black;
+  border-radius: 20px ;
+  background-color: white;
+  padding:5px 20px;
+  align-items: center;
+  text-align: center;
+}
+.botones button svg{
+
+ margin:2px
+  
+}
+
+.impacto{
+background-color: rgb(33,26,36);
+width: 98vw;
+height: 484px;
+color: white;
+padding-left: 20px;
+
+}
+
+.impacto-titulo{
+    margin-top: 5em;
+    
+    font-size: 2.5em;
+}
+
+.contadores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contadores .cont{
+   width: 80px;
+}
+
+.contadores .cont p{
+    font-size: 3em;
+    font-weight: bold;
+    margin  : 0%;
+ }
+
+ .contadores .cont h3{
+    font-size: 15px;
+    font-weight: lighter;
+    margin  : 0%;
+    color: gray;
+ }
+
+
+/* secciones */
+.secciones-marg{
+   margin-left: 30px;
+}
+
+section h2 {
+    font-size: 2em;
+}
+  /* Sección Programas*/
+
+ .imagen{
+   
+    background-image: url("/maquetacion/assets/xacademy-01-1200x800.jpg");
+    background-size: cover;
+ }
+
+ .contenido{
+    margin-left: 40px; 
+ }
+ .contenido p{
+    margin-left: 20px; 
+ }
+ .contenido h4{
+    margin-left: 20px; 
+    font-size: 1.5em;
+    margin-bottom: 5px;
+ }
+ .imag-titulo{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 42px;
+    width: 200px;
+    background-image: url("/maquetacion/assets/xacademy.svg");
+    background-size: cover;
+ }
+
+  .imagen-size{
+    height: 375px;
+    width: 562px;
+  }
+
+  .image-border-left{
+    border-bottom-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+  }
+
+  .image-border-rigth{
+    border-bottom-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+ .imagen-2{
+  
+   
+    background-image: url("/maquetacion/assets/robotica-educativa-07-1200x800.jpg");
+    background-size: cover;
+    margin-top: 20px;
+    margin-left: -40px;
+ }
