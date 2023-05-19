@@ -54,8 +54,10 @@ nav {
 .enlacesMenu{
     background-color: white;
     height:100%;
-    width:91%;
-    opacity: 0.9;   
+    width:100vw;
+    top:0;
+    opacity: 0.9; 
+    position: sticky;  
  
  }
 
@@ -404,25 +406,31 @@ margin:5px
 
 /* ---------------- Alianza ----------------------- */
 .carrusel{
-    width: 80vw;
-   
-}
-.carrusel ul{
     display: flex;
     flex-direction: row;
+    width: 80vw;
+    animation: scroll 20s infinite alternate linear;
+    -webkit-animation: scroll 20s infinite alternate linear;
+    width: calc(12.5rem * 14);
+   
 }
-
-.carrusel ul li {
-    list-style: none;
+/* 
+@keyframes scroll{
+    0%{
+       -webkit-transform: translateX(0);
+       transform: translateX(0); 
+    }
+    100%{
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
 }
+ */
 
 .image-carrusel-1{
     background-image: url("/maquetacion/assets/alianza-santex-400x151.png");
     background-size: cover;
-}
-
-.image-carrusel-1:hover {
-    filter: grayscale(0%);
+    filter: grayscale(1);
 }
 
 
@@ -430,43 +438,82 @@ margin:5px
 .image-carrusel-2{
     background-image: url("/maquetacion/assets/alianza-att.png");
     background-size: cover;
+    filter: grayscale(1);
 }
 .image-carrusel-3{
     background-image: url("/maquetacion/assets/alianza-banco-alimentos-cordoba.png");
     background-size: cover;
+    filter: grayscale(1);
+
 }
 .image-carrusel-4{
     background-image: url("/maquetacion/assets/alianza-fundacion-scrum.png");
     background-size: cover;
+    filter: grayscale(1);
 }
 .image-carrusel-5{
     background-image: url("/maquetacion/assets/alianza-grupo-inteligencia-educativa.png");
     background-size: cover;
+    filter: grayscale(1);
 }
 .image-carrusel-6{
     background-image: url("/maquetacion/assets/alianza-jesus-maria-400x151.png");
     background-size: cover;
+    filter: grayscale(1);
 }
 .image-carrusel-7{
     background-image: url("/maquetacion/assets/alianza-municipalidad-concordia-400x151.png");
     background-size: cover;
+    filter: grayscale(1);
 }
 .image-carrusel-8{
     background-image: url("/maquetacion/assets/alianza-municipalidad-morteros-1.png");
     background-size: cover;
+    filter: grayscale(1);
 }
 .image-carrusel-9{
     background-image: url("/maquetacion/assets/alianza-naranja.png");
     background-size: cover;
+    filter: grayscale(1);
 }
 
 .image-carrusel-size{
     width: 178px;
     height: 71px;
-    filter: grayscale(1);
    margin-left: 5px;
    margin-right: 5px;
 }
+
+.image-carrusel-1:hover{
+    filter: grayscale(0); 
+ }
+ .image-carrusel-2:hover{
+    filter: grayscale(0); 
+ }
+ .image-carrusel-3:hover{
+    filter: grayscale(0); 
+ }
+ .image-carrusel-4:hover{
+    filter: grayscale(0); 
+ }
+ .image-carrusel-5:hover{
+    filter: grayscale(0); 
+ }
+ .image-carrusel-6:hover{
+    filter: grayscale(0); 
+ }
+ .image-carrusel-7:hover{
+    filter: grayscale(0); 
+ }
+ .image-carrusel-8:hover{
+    filter: grayscale(0); 
+ }
+ .image-carrusel-9:hover{
+    filter: grayscale(0); 
+ }
+ .image-carrusel-10:hover{
+    filter: grayscale(0); 
+ }
 
 
 /* ----------------- footer --------------- */
@@ -827,7 +874,7 @@ nav{
     height:100vh;
     background-image: url("/maquetacion/assets/twp-home.jpg");
     background-size: cover;
-    position: sticky;
+   background-attachment: fixed;
     z-index: 100;
    
 }
@@ -868,6 +915,8 @@ justify-content: center;
  }
 
 
+ 
+ 
 
 
 
