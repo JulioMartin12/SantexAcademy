@@ -4,12 +4,13 @@
     --fontSize: 28px;
 }
 
-*{ font-family:'Inter' ;
+html{ font-family:'Inter' ;
 
 }
 
 body {
     margin: 0;
+ overflow-x: hidden;
 }
 p {
     margin-right: 40px;
@@ -33,10 +34,10 @@ div#introduction-actions {
 /* MENU */
 nav {
   display: flex;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
   height: 80px;
-  width: 557px;
+  width: 90vw;
   border-bottom: 2px solid gray;
   align-items: center;
   justify-content: space-between;
@@ -51,14 +52,14 @@ nav {
 }
 
 .enlacesMenu{
-   
     background-color: white;
     height:100%;
     width:91%;
-    opacity: 0.9;
-    
+    opacity: 0.9;   
  
  }
+
+
 .enlacesMenu li{
    list-style:none;
    text-align: center;
@@ -67,16 +68,17 @@ nav {
  
 
 }
+
 .enlacesMenu li:first-child{
-    margin-top: 100px; 
+    margin-top:6.25em; 
  }
 
 
 input:checked ~ ul{
   display: block;
   position: absolute;
-  left: 10px;
-  top: 70px;
+  left: 0.6em;
+  top: 4.3em;
   
 
 }
@@ -90,12 +92,23 @@ input {
    justify-content: end;
 }
 .search {
-    padding: 0px 16px;
+    padding: 0px 1em;
 }
 .hamburguesa {
-    padding: 0px 16px;
+    padding: 0px 1em;
 }
 
+.sumate{
+    font-size: 1.1em;
+    width: 5em;
+    height: 1em;
+    border: none;
+    font-family: 'Inter';
+    font-weight: bold;
+    background-color: transparent;
+    margin: 0;
+    
+}
 
 /* MAIN */
 .texto-introduccion{
@@ -140,23 +153,24 @@ h1 {
 
 .impacto{
 background-color: rgb(33,26,36);
-width: 98vw;
+width: 100vw;
 height: 484px;
 color: white;
 padding-left: 20px;
+padding-top:3em ;
+display: flex;
 
 }
 
 .impacto-titulo{
-    margin-top: 5em;
-    
-    font-size: 2.5em;
+  height: 40px;
 }
 
 .contadores{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .contadores .cont{
@@ -176,8 +190,18 @@ padding-left: 20px;
     color: gray;
  }
 
+ .valor-Mentores{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ }
 
-/* secciones */
+ .signo-Mentores{
+    font-size: 2em;
+    margin-right: 5px;
+ }
+
+/* ------------------ secciones---------------------------- */
 .secciones-marg{
    margin-left: 30px;
 }
@@ -231,10 +255,620 @@ section h2 {
   }
 
  .imagen-2{
-  
-   
     background-image: url("/maquetacion/assets/robotica-educativa-07-1200x800.jpg");
     background-size: cover;
-    margin-top: 20px;
-    margin-left: -40px;
+  
+   
+
  }
+
+ /* -------------------------- Capacitaciones ------------------------ */
+
+ .imagen-3{
+    background-image: url("/maquetacion/assets/estafas-virtuales-04-600x453.jpg");
+    background-size: cover;
+   
+   
+ }
+ .imagen-4{
+    background-image: url("/maquetacion/assets/seguridad-informatica-para-infancias-800x531.jpg");
+    background-size: cover;
+   
+   
+  
+ }
+
+ /* -------------------------- Equipo ------------------------ */
+
+ .foto-size{
+    height: 400px;
+    width: 540px;
+    margin-top: 1.8em;
+    border-top-left-radius: 1.25em;
+    border-top-right-radius: 1.25em;
+  }
+
+ .foto-presidente{
+    background-image: url("/maquetacion/assets/twp-juan.png");
+    background-size: cover;
+ }
+
+ .foto-secretario{
+    background-image: url("/maquetacion/assets/twp-walter.png");
+    background-size: cover;
+ }
+
+ .foto-comision-directiva{
+    background-image: url("/maquetacion/assets/twp-gabriela.png");
+    background-size: cover;
+ }
+
+ .foto-tesorero{
+    background-image: url("/maquetacion/assets/twp-gabriel.png");
+    background-size: cover;
+ }
+
+ .foto-direccion-ejecutiva{
+    background-image: url("/maquetacion/assets/twp-florencia.png");
+    background-size: cover;
+ }
+
+ .foto-Comision-directiva{
+    background-image: url("/maquetacion/assets/twp-celeste.png");
+    background-size: cover;
+ }
+
+ .foto-directora-academy{
+    background-image: url("/maquetacion/assets/twp-florencia.png");
+    background-size: cover;
+ }
+
+ .foto-Coord-inclusion{
+    background-image: url("/maquetacion/assets/agustin-chino.png");
+    background-size: cover;
+ }
+
+ .foto-relaciones-institucionales{
+    background-image: url("/maquetacion/assets/enzo-dotto.png");
+    background-size: cover;
+ }
+
+
+
+ .red-social{
+    width: 25.62px;
+    height: 25.62px;
+ }
+
+
+ .equipo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245,244,244);
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+ }
+
+ .descripcion-foto{
+    width: 562px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+     align-items: center;
+     background-color: white;
+     
+    
+
+ }
+
+ .nombre-foto h5{
+    margin: 0px;
+    font-size: 1em;
+ }
+ .cargo p{
+  color: gray;
+  margin: 0px;
+
+
+}
+ .red-social{
+margin:5px
+}
+
+.titulo-equipo{
+    display: flex;
+    width: 100vw;
+    padding-left: 6.5em;
+  
+  
+
+ 
+}
+.titulo-equipo h2{
+    padding:0;
+    margin: 0;
+    margin-top:2em ;
+}   
+
+.margin-foto{
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+    
+
+/* ---------------- Alianza ----------------------- */
+.carrusel{
+    width: 80vw;
+   
+}
+.carrusel ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.carrusel ul li {
+    list-style: none;
+}
+
+.image-carrusel-1{
+    background-image: url("/maquetacion/assets/alianza-santex-400x151.png");
+    background-size: cover;
+}
+
+.image-carrusel-1:hover {
+    filter: grayscale(0%);
+}
+
+
+
+.image-carrusel-2{
+    background-image: url("/maquetacion/assets/alianza-att.png");
+    background-size: cover;
+}
+.image-carrusel-3{
+    background-image: url("/maquetacion/assets/alianza-banco-alimentos-cordoba.png");
+    background-size: cover;
+}
+.image-carrusel-4{
+    background-image: url("/maquetacion/assets/alianza-fundacion-scrum.png");
+    background-size: cover;
+}
+.image-carrusel-5{
+    background-image: url("/maquetacion/assets/alianza-grupo-inteligencia-educativa.png");
+    background-size: cover;
+}
+.image-carrusel-6{
+    background-image: url("/maquetacion/assets/alianza-jesus-maria-400x151.png");
+    background-size: cover;
+}
+.image-carrusel-7{
+    background-image: url("/maquetacion/assets/alianza-municipalidad-concordia-400x151.png");
+    background-size: cover;
+}
+.image-carrusel-8{
+    background-image: url("/maquetacion/assets/alianza-municipalidad-morteros-1.png");
+    background-size: cover;
+}
+.image-carrusel-9{
+    background-image: url("/maquetacion/assets/alianza-naranja.png");
+    background-size: cover;
+}
+
+.image-carrusel-size{
+    width: 178px;
+    height: 71px;
+    filter: grayscale(1);
+   margin-left: 5px;
+   margin-right: 5px;
+}
+
+
+/* ----------------- footer --------------- */
+footer {
+    font-family: 'Inter';
+    width: 100vw;
+    height: 75vh;
+    background-color: rgb(33,26,36);
+    color: rgb(216,217,216);
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 30px;
+
+}
+
+.imag-footer{
+    background-image: url("/maquetacion/assets/technology-with-purpose-white.svg");
+    background-size: cover;
+   
+    width: 177px;
+    height: 51px;
+}
+.redes a{
+    text-decoration: none;
+    color: rgb(216,217,216);
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+align-content: baseline;
+   
+}
+
+.redes a div p{
+    margin-right: 5px;
+}
+
+.instagram-link:hover {
+    color: white;
+}
+
+.instagram-link:hover {
+    color: white;
+}
+
+
+.instagram{
+    background-image: url("/maquetacion/assets/instagram-svgrepo-com.svg ");
+    width: 18px;
+    height: 18px;
+    background-size: cover;
+    margin-right: 5px;
+ 
+}
+
+.linkedin{
+    background-image: url("/maquetacion/assets/linkedin.svg");
+    width: 18px;
+    height: 18px;
+    background-size: cover;
+    margin-right: 5px;
+   
+ 
+}
+
+/* ---------------Medias Quieries ---------------- */
+
+@media (min-width:646px) {
+   /* -------------Impacto ----------------- */
+   
+nav{
+    position:0;
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+
+};
+
+
+    .impacto{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      
+        
+    }
+
+    .definicionImpacto{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 133px;
+        margin-right: 0;
+        
+        
+    }
+
+    .definicionImpacto p{
+        margin-right: 0;
+    }
+    .definicionImpacto h2{
+        margin-bottom: 0;
+    }
+
+.contadores {
+    margin-left: 10em;
+  
+}
+.cont {
+    margin-bottom: 4em;
+ 
+}
+
+/* ---------------Programas--------------- */
+
+.imagen-size{
+    height: 15rem;
+    width:  20rem;
+    margin-bottom: 20px;
+   
+    
+  }
+
+  .image-border-left{
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+  }
+
+  .image-border-rigth{
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+
+  .programas h2{
+    width: 100vw;
+    margin-top: 20px;
+    }
+.programas{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-items: center;
+}
+
+.contenido{
+    width: 33vw;
+}
+
+.primer-Disposicion{
+display: flex;
+flex-direction: row;
+width: 100vw;
+height: 20em;
+justify-content: center;
+align-items: center;
+align-content: center;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.imag-titulo{
+    height: 38px;
+    width: 181px;
+   
+}
+
+.segunda-Disposicion{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 20em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+    }
+
+  
+
+
+   /*  .segunda-Disposicion-contenido{
+        display: flex;
+        flex-direction: column;
+        width: 12em;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-left: 15px;
+       
+    } */
+
+    /* .segunda-Disposicion-contenido h4{
+        font-size: 1.5em;
+        text-align: start;
+        margin: 0;
+        margin-bottom: 10px;
+    
+    }
+
+    .segunda-Disposicion-contenido p{
+        margin: 0;
+        margin-bottom: 10px;
+        
+    } */
+
+   /*  .imagen-2{
+        margin-left: 5em;
+    } */
+
+
+    /* ---------Equipo----------- */
+
+
+    .foto-size {
+        height: 5em;
+        width: 6.8em;
+        margin-top: 30px;
+        border-top-left-radius: 1.25em;
+        border-top-right-radius:1.25em;
+    }
+
+    .descripcion-foto {
+        width: 6.8em;
+        height: 7.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        background-color: white;
+    }
+
+    .nombre-foto{
+        text-align: center;
+        font-size: 1.25em;
+    }
+
+    .cargo{
+        text-align: center;
+    }
+    .equipo{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly
+    }
+
+
+    /* -----footer------ */
+
+    footer {
+       flex-direction: row;
+       justify-content: space-evenly;
+       height: 12em;
+       align-items: start;
+    }
+    
+    .text-footer{
+        font-size: 12px;
+        margin: 0;
+        margin-right: 30px;
+    }
+
+
+.imag-footer {
+
+    width: 98px;
+    height: 28px;
+   
+}
+
+.contacto{
+    margin-top: 0%;
+}
+}
+
+
+@media (min-width:812px) {
+
+.hamburguesa, .search, .letra{
+    display: none;
+} 
+
+.enlacesMenu{
+    display: block;
+    display: flex;
+   flex-direction: row;
+   background-color: transparent;
+   width: 41vw;
+   height: 75px;
+   align-items: center;
+   justify-content: end;
+
+   
+} 
+nav{
+    width: 95vw;
+}
+.sumate{
+    font-size: 15px;
+    width: 90px;
+    margin: 0;
+    border: 2px solid rgb(33,26,36);
+    border-radius: 30px;
+    height: 40px;
+   
+}
+.enlacesMenu li{
+    font-size: 15px;
+    position: relative;
+    margin-right: 1.5em;  
+} 
+
+.enlacesMenu li:first-child {
+    margin-top: 0;
+}
+
+.ico-instagram{
+    background-image: url("/maquetacion/assets/instagramblack.svg");
+    background-size: cover;
+    color: black;
+    width: 22px;
+    height: 22px;
+
+    
+}
+
+.ico-instagram{
+    background-image: url("/maquetacion/assets/instagramblack.svg");
+    background-size: cover;
+    color: black;
+    width: 12px;
+    height:12px;    
+}
+
+.ico-linkedin{
+    background-image: url("/maquetacion/assets/linkedin-svgrepo-com-black.svg");
+    background-size: cover;
+    color: black;
+    width: 12px;
+    height: 12px;
+    
+
+    
+}
+
+.icono{
+    top: 2px;
+}
+
+/* ----------------Home------------ */
+.foto-home{
+     width:100vw;
+    height:100vh;
+    background-image: url("/maquetacion/assets/twp-home.jpg");
+    background-size: cover;
+    position: sticky;
+    z-index: 100;
+   
+}
+
+
+.texto-introduccion{
+align-items: center;
+
+margin-left: auto;
+margin-right: auto;
+}
+
+.impacto{
+display: flex;
+align-items:center;
+justify-content: center;
+}
+
+.impacto-titulo {
+  height:50px;
+
+}
+.contadores{
+    flex-direction: row;
+    gap:5em;
+}
+
+
+.imagen-size{
+    height: 25rem;
+    width:  40rem;
+    margin-top: 40px;
+    
+  }
+
+ .primer-Disposicion , .segunda-Disposicion{
+    margin-bottom: 7em;
+ }
+
+
+
+
+
+}
